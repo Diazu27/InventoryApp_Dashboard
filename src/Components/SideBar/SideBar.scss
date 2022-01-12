@@ -1,0 +1,46 @@
+
+.SideBar{
+    background-color: $thirtColor;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100px;
+}
+
+.logoBox{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 110px;
+
+    .Icon{
+        color: white;
+        font-size: 30px;
+    }
+}
+
+.Menu{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    list-style: none;
+
+    li{
+        align-items: center;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        font-size: 30px;
+        height: 10vh;
+        margin: 20px;
+        width: 100%;
+        justify-content: center;
+
+        &:hover{
+            background-color: lighten($color: $thirtColor, $amount: 10);
+        }
+    }
+}
