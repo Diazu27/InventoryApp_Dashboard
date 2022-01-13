@@ -1,0 +1,39 @@
+
+.NavControl{
+    display: flex;
+    background-color: $neutralColor;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+
+.SearchBox{
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+
+    input{
+        border: none;
+        width: 80%;
+        border-radius: 10px 0px 0px 10px;
+        padding-left: 20px;
+    }
+
+    button{
+        border: none;
+        padding: 10px 40px;
+        border-radius: 0px 10px 10px 0px;
+        background-color: $thirtColor;
+        color: white;
+    }
+
+}
+
+.btnAdd{
+    border: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: rgb(60, 175, 60);
+    color: white;
+    font-weight: 600;
+}
