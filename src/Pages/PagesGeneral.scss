@@ -1,0 +1,23 @@
+.PageContainer{
+    display: flex;
+    height: 85vh;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.TabConte{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin-right: 10px;
+}
+
+
+.TabCharts{
+    background-color: $neutralColor;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 20px 10px;
+}
+
