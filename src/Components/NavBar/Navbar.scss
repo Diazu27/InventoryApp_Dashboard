@@ -1,0 +1,33 @@
+
+.navBar{
+    align-items: center;
+    background-color: $neutralColor;
+    display: flex;
+    height: 70px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.userBox{
+    padding: 10px 20px;
+    background-color: $thirtColor;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    font-weight: 700;
+    margin-left: auto;
+
+    .userIcon{
+       font-size: 20px;
+       font-weight: 20px;
+       margin-right: 10px; 
+    }
+}
+
+.logoutButton{
+    color: $thirtColor;
+    font-size: 30px;
+    font-weight: 20px;
+    margin-right: 10px; 
+    margin: 0px 20px;
+}
