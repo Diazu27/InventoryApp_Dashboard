@@ -1,0 +1,50 @@
+
+.tableCont{
+    margin-top: 20px;
+    width: 100%;
+    overflow: scroll;
+
+    
+    table{
+        width: 100%;
+    }
+    td{
+        padding: 8px;
+    }
+    th{
+        padding: 12px;
+        text-align: left;
+        background-color: $thirtColor;
+        color: white;
+    }
+    tr:nth-child(even){background-color: #f2f2f2;}
+}
+
+
+.buttonbox{
+    width: 20%;
+}
+
+.btn{
+    padding: 10px;
+    margin-right: 20px;
+    border: none;
+
+  &-delete{
+      background-color: rgb(253, 77, 77);
+      padding: 10px;
+      margin-right: 20px;
+      border: none;
+      border-radius: 5px;
+      width: 70px;
+  }
+
+    &-edit{
+        background-color: rgb(252, 249, 103);
+        padding: 10px;
+        margin-right: 20px;
+        border: none;
+        border-radius: 5px;
+        width: 70px;
+    }
+}
