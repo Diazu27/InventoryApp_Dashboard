@@ -9,20 +9,22 @@ const Table = () => {
        <div className='tableCont'>
         <table>
             <thead>
+             <tr>
                 <th>id</th>
                 <th>Producto</th>
                 <th>Catergoria</th>
                 <th>Cantidad</th>
                 <th>Precio</th>
                 <th>Opciones</th>
+             </tr>
             </thead>
 
             <tbody>
               {
                   prod.map((Producto, index)=>{
                     return(
-                        <tr>
-                        <td>1</td>
+                        <tr key={index}>
+                        <td>{index}</td>
                         <td>{Producto}</td>
                         <td>Carnes</td>
                         <td>200</td>
