@@ -1,50 +1,55 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const Table = () => {
+const Table = ({data, def}) => {
 
-    var prod =["Pollo", "Res", "Fresas", "Papaya", "Aguacate", "limones", "Mangos", "cebollas", "Nance", "Pan Molde","Platano",
-    "Pollo", "Res", "Fresas", "Papaya", "Aguacate", "limones", "Mangos", "cebollas", "Nance", "Pan Molde","Platano"];
+    const tableData = data.map((rowDa, index)=>{
+        let rowData = [];
+
+        for(let [k,v] of Object.entries(rowDa)){
+            rowData.push(v);
+        }
+        return(
+            <tr key={index}>
+                {
+                    rowData.map((rd, index)=>{
+                        return <td key={index}>{rd}</td>
+                    })
+                }
+                <td className='buttonbox'>
+                    <button className='btn-edit'>Editar</button>
+                    <button className='btn-delete'>Eliminar</button>
+                </td>
+            </tr>
+        );
+    })
+
+
 
     return (
        <div className='tableCont'>
         <table>
             <thead>
              <tr>
-                <th>id</th>
-                <th>Producto</th>
-                <th>Catergoria</th>
-                <th>Cantidad</th>
-                <th>Precio</th>
+                {
+                    def.map((header, index)=>{
+                        return(<th key={index}>{header}</th>)
+                    })
+                }
                 <th>Opciones</th>
              </tr>
             </thead>
 
             <tbody>
-              {
-                  prod.map((Producto, index)=>{
-                    return(
-                        <tr key={index}>
-                        <td>{index}</td>
-                        <td>{Producto}</td>
-                        <td>Carnes</td>
-                        <td>200</td>
-                        <td>400.00</td>
-                        <td className='buttonbox'>
-                            <button className='btn-edit'>Editar</button>
-                            <button className='btn-delete'>Eliminar</button>
-                        </td>
-                        </tr>
-                    );
-                  })
-              }
-              
+                {tableData}
             </tbody>
-
-
-
         </table>
        </div>
     )
 }
 
+
+
 export default Table
+
+
+
