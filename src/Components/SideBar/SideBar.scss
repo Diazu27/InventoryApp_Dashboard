@@ -1,6 +1,6 @@
 
 .SideBar{
-    background-color: $thirtColor;
+    background-color: $PrimaryColor;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -40,7 +40,7 @@
         justify-content: center;
 
         &:hover{
-            background-color: lighten($color: $thirtColor, $amount: 10);
+            background-color: darken($color: $PrimaryColor, $amount: 10);
         }
     }
 }

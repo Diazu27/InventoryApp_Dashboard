@@ -12,9 +12,9 @@ const state = {
     datasets: [{
         data: [200, 50, 100],
         backgroundColor: [
-            '#00a6ed',
-            '#122b9b',
-            '#06165c'
+            '#28536B',
+            '#356d8b',
+            '#468bb1'
         ],
         hoverOffset: 4,
         borderWidth: 1

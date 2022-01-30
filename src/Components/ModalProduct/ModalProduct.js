@@ -1,5 +1,6 @@
 import React from 'react'
 import {AiOutlineClose} from 'react-icons/ai'
+import ProductsForms from '../Forms/ProductsForms'
 
 const ModalProduct = ({handleClose}) => {
     return (
@@ -8,6 +9,7 @@ const ModalProduct = ({handleClose}) => {
                 <div className='closeIcon'>
                     <AiOutlineClose className='btnClose' onClick={handleClose}/>
                 </div>
+                <ProductsForms/>
             </div>
         </div>
     )

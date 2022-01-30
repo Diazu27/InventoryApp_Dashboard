@@ -3,10 +3,11 @@
     margin-top: 20px;
     width: 100%;
     overflow: scroll;
+    border-radius: 5px;
 
-    
     table{
         width: 100%;
+        border-collapse: collapse;
     }
     td{
         padding: 8px;
@@ -14,7 +15,7 @@
     th{
         padding: 12px;
         text-align: left;
-        background-color: $thirtColor;
+        background-color: $PrimaryColor;
         color: white;
     }
     tr:nth-child(even){background-color: #f2f2f2;}
@@ -29,9 +30,11 @@
     padding: 10px;
     margin-right: 20px;
     border: none;
+    color: white;
 
   &-delete{
-      background-color: rgb(253, 77, 77);
+      background-color: $dangerColor;
+      color: white;
       padding: 10px;
       margin-right: 20px;
       border: none;
@@ -40,7 +43,7 @@
   }
 
     &-edit{
-        background-color: rgb(252, 249, 103);
+        background-color: $WarningColor;
         padding: 10px;
         margin-right: 20px;
         border: none;
